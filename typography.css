@@ -1,0 +1,43 @@
+/* Allura Dental — Typography
+   Content system (everything except the logo itself):
+   • Literata (serif) — headlines, quotes, considered/emotional content
+   • Manrope (sans)  — body, buttons, prices, disclaimers, anything functional
+   Rule of thumb: button/price/disclaimer → Manrope; headline/quote → Literata.
+   Caveat / Fredoka are Instagram-carousel-cover only and NOT part of the web system.
+   Poppins is the LOGO wordmark typeface only (ALLURA Bold / DENTAL Medium /
+   TRUGANINA Light) — never used for content. */
+:root {
+  --font-serif: 'Literata', Georgia, 'Times New Roman', serif;    /* display / headlines */
+  --font-sans:  'Manrope', system-ui, -apple-system, sans-serif;  /* body / functional */
+  --font-logo:  'Poppins', var(--font-sans);                      /* logo lockup only */
+
+  /* Weights */
+  --fw-regular: 400;   /* @kind font */
+  --fw-medium: 500;    /* @kind font */
+  --fw-semibold: 600;  /* @kind font */
+  --fw-bold: 700;      /* @kind font */
+  --fw-extrabold: 800; /* @kind font */
+
+  /* Type scale — web (larger than the reference PDF's document scale) */
+  --text-display: 3.25rem;   /* 52px — hero headline */
+  --text-h1: 2.5rem;         /* 40px */
+  --text-h2: 1.875rem;       /* 30px — section headline */
+  --text-h3: 1.375rem;       /* 22px */
+  --text-h4: 1.0625rem;      /* 17px — card title */
+  --text-lg: 1.125rem;       /* 18px — lead paragraph */
+  --text-body-size: 1rem;    /* 16px */
+  --text-sm: 0.875rem;       /* 14px */
+  --text-xs: 0.75rem;        /* 12px — disclaimers, captions */
+  --text-eyebrow: 0.6875rem; /* 11px — uppercase eyebrow */
+
+  /* Line heights */
+  --lh-tight: 1.1;    /* @kind other */
+  --lh-heading: 1.2;  /* @kind other */
+  --lh-snug: 1.4;     /* @kind other */
+  --lh-body: 1.6;     /* @kind other */
+
+  /* Letter spacing */
+  --ls-eyebrow: 0.2em;   /* @kind other */
+  --ls-label: 0.08em;    /* @kind other */
+  --ls-tight: -0.01em;   /* @kind other */
+}
