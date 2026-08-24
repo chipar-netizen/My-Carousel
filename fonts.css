@@ -1,0 +1,6 @@
+/* Allura Dental — Webfonts
+   No local font binaries were provided with the brand assets, so the content
+   fonts (Literata, Manrope) and the logo font (Poppins) are loaded from Google
+   Fonts. All are the genuine specified families. See readme.md CAVEATS —
+   swap in self-hosted binaries if brand-exact hinting/subsetting is required. */
+@import url('https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;0,7..72,600;0,7..72,700;1,7..72,400;1,7..72,500&family=Manrope:wght@400;500;600;700;800&family=Poppins:wght@300;500;700&display=swap');

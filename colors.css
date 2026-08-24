@@ -1,0 +1,68 @@
+/* Allura Dental — Colour system
+   Two live palettes. Option B (neutral-dominant) is the default; Option A
+   (green-dominant) is the secondary/print palette. Golds and the extended
+   palette are shared. See readme.md → VISUAL FOUNDATIONS for the Black vs
+   Monument rule and "what the colours mean". */
+:root {
+  /* ---- Option B — neutral-dominant (PRIMARY, default) ---- */
+  --warm-white: #FDFCFA;        /* cream base / page + card background */
+  --soft-beige: #F3EDE3;        /* default page field */
+  --light-grey: #E7E3DB;        /* hairline borders, dividers */
+  --brushed-gold: #B8965A;      /* mid gold accent — Primary button fill */
+  --deep-gold: #8F7038;         /* high-contrast gold — hover, ghost links */
+  --monument-charcoal: #323233; /* STRUCTURAL framing only (covers, dark backdrops) */
+  --sage-green: #6A7F62;        /* small accent — icons (Tier 1), dividers, tags */
+
+  /* ---- Option A — green-dominant (SECONDARY / existing print) ---- */
+  --forest-green: #3F632F;      /* exact, sampled from the real logo file */
+  --cream: #FDFCFA;             /* alias of warm white for the green palette */
+
+  /* ---- Extended palette (sparingly — 1–2 per piece, never the whole set) ---- */
+  --premium-beige: #FBF9F4;     /* near-white "quiet luxury" bg, preferred for badges */
+  --hog-bristle: #EAE5D8;
+  --shale-grey: #BCC0BA;
+  --moss-olive: #5F6B43;
+  --vibrant-gold: #CEB04E;      /* bold moments — echoes the backlit reception sign */
+  --deep-bronze: #B5842C;
+  --pure-black: #000000;
+
+  /* ---- Text greys (measured from source documents) ---- */
+  --ink-900: #000000;           /* body + headings — almost everything is black */
+  --ink-700: #4A4A45;
+  --ink-600: #55554F;
+  --ink-500: #6B6B63;
+  --ink-400: #8A8A82;
+  --ink-300: #A19E96;
+
+  /* ---- Semantic aliases ---- */
+  --surface-page: var(--soft-beige);
+  --surface-card: var(--warm-white);
+  --surface-raised: var(--premium-beige);
+  --surface-inverse: var(--monument-charcoal);
+  --surface-green: var(--forest-green);
+
+  --text-body: var(--ink-900);
+  --text-muted: var(--ink-500);
+  --text-subtle: var(--ink-400);
+  --text-on-dark: var(--warm-white);
+  --text-on-green: var(--warm-white);
+  --text-on-gold: var(--warm-white);
+
+  --border-hairline: var(--light-grey);
+  --border-strong: var(--pure-black);
+
+  --accent-gold: var(--brushed-gold);
+  --accent-gold-strong: var(--deep-gold);
+  --accent-green: var(--sage-green);
+
+  /* Button semantics */
+  --btn-primary-bg: var(--brushed-gold);
+  --btn-primary-bg-hover: var(--deep-gold);
+  --btn-primary-text: var(--warm-white);
+  --btn-secondary-border: var(--pure-black);
+  --btn-secondary-text: var(--pure-black);
+  --btn-ghost-text: var(--deep-gold);
+
+  /* Icon semantics */
+  --icon-functional: var(--sage-green);   /* Tier 1 outline default */
+}

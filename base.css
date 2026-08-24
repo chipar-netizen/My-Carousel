@@ -1,0 +1,50 @@
+/* Allura Dental — Base element styling
+   Applies the token system to raw HTML so specimen cards, components and UI
+   kits inherit the brand defaults without extra classes. */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: var(--text-body-size);
+  line-height: var(--lh-body);
+  color: var(--text-body);
+  background: var(--surface-page);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-serif);
+  font-weight: var(--fw-semibold);
+  line-height: var(--lh-heading);
+  color: var(--text-body);
+  margin: 0 0 var(--space-3);
+  text-wrap: balance;
+}
+h1 { font-size: var(--text-h1); letter-spacing: var(--ls-tight); }
+h2 { font-size: var(--text-h2); }
+h3 { font-size: var(--text-h3); }
+h4 { font-size: var(--text-h4); }
+
+p { margin: 0 0 var(--space-4); text-wrap: pretty; }
+
+/* Eyebrow — small uppercase label above headings, brushed gold */
+.eyebrow {
+  font-family: var(--font-sans);
+  font-size: var(--text-eyebrow);
+  font-weight: var(--fw-bold);
+  letter-spacing: var(--ls-eyebrow);
+  text-transform: uppercase;
+  color: var(--accent-gold);
+}
+
+/* Links — plain, brand-black by default (never default browser blue),
+   gold on hover. The footer deliberately styles social links identically to
+   surrounding text, so links never announce themselves in blue. */
+a { color: var(--text-body); text-decoration: none; transition: color var(--dur-base) var(--ease-standard); }
+a:hover { color: var(--deep-gold); }
+
+hr { border: none; border-top: var(--border); margin: var(--space-6) 0; }
+
+::selection { background: var(--brushed-gold); color: var(--warm-white); }
